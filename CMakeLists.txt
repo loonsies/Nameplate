@@ -7,10 +7,11 @@ project(Nameplate
     HOMEPAGE_URL "https://www.github.com/Shirk/Nameplate"
 )
 
-# set(ASHITA_SDK_PATH "../Ashita v4 SDK 4.11/plugins/sdk" CACHE STRING "Ashita SDK Path")
-# set(ASHITA_SDK_PATH "../Ashita v4 SDK 4.14/plugins/sdk" CACHE STRING "Ashita SDK Path")
-# set(ASHITA_SDK_PATH "../Ashita v4 SDK 4.15/plugins/sdk" CACHE STRING "Ashita SDK Path")
-set(ASHITA_SDK_PATH "../Ashita v4 SDK 4.16/plugins/sdk" CACHE STRING "Ashita SDK Path")
+set(ASHITA_SDK_PATH "" CACHE STRING "Ashita SDK Path")
+
+if(NOT ASHITA_SDK_PATH)
+    message(FATAL_ERROR "ASHITA_SDK_PATH not set. Provide with: -DASHITA_SDK_PATH=/path/to/sdk")
+endif()
 
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED True)
