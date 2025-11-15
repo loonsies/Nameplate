@@ -44,7 +44,7 @@ jobs:
             -DCMAKE_CXX_COMPILER=clang `
             -DCMAKE_CXX_COMPILER_FORCED=ON `
             -DCMAKE_BUILD_TYPE=Release `
-            -DASHITA_SDK_PATH=${{ github.workspace }}/ashita-sdk-430/plugins/sdk
+            -DASHITA_SDK_PATH=${{ github.workspace }}/ashita-sdk-430/plugins/sdk `
             -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
       - name: Build DLL
