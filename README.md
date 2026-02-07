@@ -9,7 +9,7 @@ With this plugin, nameplates will be less blurry and the same size regardless of
 If you're already using Ashita v4, you likely already know how to do this.
 
 Make sure the plugin api version matches the Ashita 4 api version.
-This version of Nameplate requires ***Ashita 4 interface 4.16***.
+This version of Nameplate requires ***Ashita 4 interface 4.30***.
 
 ## Usage for Ashita v4 users
 
